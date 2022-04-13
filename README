@@ -1,3 +1,7 @@
+#Notes specific to me
+====================
+1) Add ` Option "TearFree" "true" ` in a file like 20-intel.conf 
+\br further reading - https://wiki.archlinux.org/title/intel_graphics#Troubleshooting
 dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
