@@ -8,8 +8,8 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int minwsz    = 20;       /* Minimal heigt of a client for smfact */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrainsMono NF:size=11","joypixels:pixelsize=13:antialias=true:autohint=true","noto-fonts-emoji:pixelsize=13:antialias=true:autohint=true","twemoji:pixelsize=13:antialias=true:autohint=true" };
-static const char dmenufont[]       = "JetBrainsMono NF:size=11";
+static const char *fonts[]          = { "JetBrains Mono:size=10","joypixels:pixelsize=12:antialias=true:autohint=true","twemoji:pixelsize=12:antialias=true:autohint=true" };
+static const char dmenufont[]       = "JetBrains Mono:size=11";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
