@@ -30,7 +30,8 @@ static const char *volupcmd[] = {"pactl","set-sink-volume","0","+5%",NULL};
 static const char *voldowncmd[] = {"pactl","set-sink-volume","0","-5%",NULL};
 static const char *brupcmd[] = { "brightnessctl","-d","intel_backlight","s","+5",NULL };
 static const char *brdowncmd[] = { "brightnessctl","-d","intel_backlight","s","5-",NULL };
-static const char *takess[] = { "maim -s | xclip -selection clipboard -t image/png",NULL };
+static const char *take_ss[] = { "maim_takess.sh",NULL };
+
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -135,12 +136,12 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {1} }, 
+	{ MODKEY|ShiftMask,             XK_p,      spawn,          {.v = take_ss}},
   {0,                             XF86XK_AudioMute,spawn,    {.v = mutecmd}},
   {0,                             XF86XK_AudioRaiseVolume,spawn,    {.v = volupcmd}},
   {0,                             XF86XK_AudioLowerVolume,spawn,    {.v = voldowncmd}},
   {0,                             XF86XK_MonBrightnessUp,spawn,{.v = brupcmd}},
   {0,                             XF86XK_MonBrightnessDown,spawn,{.v = brdowncmd}},
-	{ MODKEY|ShiftMask,             XK_p,      spawn,          {.v = takess } },
 };
 
 /* button definitions */
